@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tradememes.memeschain">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/imageonlinecoroundcorner"
+        android:label="TradeMemes"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Memeschain">
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1086704177750756~6385738587"/>
+
+        <activity
+            android:name="com.tradememes.memeschain.uploaderprofile"
+            android:exported="true"
+
+            />
+        <activity
+            android:name="com.tradememes.memeschain.splash"
+            android:exported="true" />
+        <activity
+            android:name="com.tradememes.memeschain.taklamanus"
+            android:exported="true" />
+        <activity
+            android:name="com.tradememes.memeschain.rules"
+            android:exported="true" />
+        <activity
+            android:name="com.tradememes.memeschain.profile"
+            android:exported="true" />
+        <activity
+            android:name="com.tradememes.memeschain.MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name="com.tradememes.memeschain.uploadfromhere"
+            android:exported="true" />
+        <activity
+            android:name="com.tradememes.memeschain.uploadmeme"
+            android:exported="true" />
+        <activity
+            android:name="com.tradememes.memeschain.homepage"
+            android:exported="true" />
+        <activity
+            android:name="com.tradememes.memeschain.reg"
+            android:exported="true" />
+        <activity
+            android:name="com.tradememes.memeschain.login"
+            android:exported="true" />
+        <activity
+            android:name="com.tradememes.memeschain.MainActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
